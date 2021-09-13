@@ -6,9 +6,11 @@ Nesse projeto é possível criar, alterar, deletar e ver os dados de clientes fi
 
 É necessário ter o Python instalado para prosseguir:
 
-1. Primeiro, abra o terminal na pasta raiz do projeto e faça a instalação das bibliotecas utilizadas, Flask e PyMySQL: **pip3 install -r requirements.txt**
+1. Primeiro, abra o terminal na pasta raiz do projeto e faça a instalação das bibliotecas utilizadas, Flask e PyMySQL: **pip3 install -r requirements.txt**.
 
-2. Após isso, ainda na pasta raiz do projeto, execute o comando: **python3 app.py**
+2. Após isso, ainda na pasta raiz do projeto, execute o comando: **python3 app.py**.
+
+3. Acesse seu **localhost** na porta **3000**. [Tente aqui](http://127.0.0.1:3000)
 
 Pronto, faça os testes da aplicação!
 
