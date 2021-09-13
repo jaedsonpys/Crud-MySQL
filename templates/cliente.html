@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+</head>
+<body>
+    <h1>Informações sobre {{cliente[1]}}</h1>
+    <ul>
+        <li>ID: {{ cliente[0] }}</li>
+        <li>Nome: {{ cliente[1] }}</li>
+        <li>Email: {{cliente[2]}}</li>
+        <li>Data de cadastro: {{cliente[4]}}</li>
+        <li>Informações: {{cliente[3]}}</li>
+        <li><a href="/alterar/{{cliente[0]}}">Alterar dados</a></li>
+        <li style="color: red;"><a style="color: red;" href="/deletar/{{cliente[0]}}">Deletar</a></li>
+    </ul>
+    <a href="/clientes">Ver outros clientes</a>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+</head>
+<body>
+    <h1>Veja aqui todos os seus clientes</h1>
+    {% if deleted %}
+    <p style="color: green;">Cliente deletado com sucesso</p>
+    {% endif %}
+    {% if not clientes %}
+    <h2>Nada por aqui...</h2>
+    {% else %}
+    {% for c in clientes %}
+        <ul>
+            <li>ID: {{ c[0] }}</li>
+            <li>Nome: {{ c[1] }}</li>
+            <li>Email: {{c[2]}}</li>
+            <li><a href="/clientes/{{c[0]}}">Veja todas as Informações desse cliente</a></li>
+        </ul>
+        <br>
+    {%endfor%}
+    {% endif %}
+    <ul>
+        <li><a href="/criar">Cadastrar cliente</a></li>
+        <li><a href="/clientes">Ver clientes</a></li>
+    </ul>
+</body>
+</html>

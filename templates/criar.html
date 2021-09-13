@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar clientes</title>
+</head>
+<body>
+    <h1>Preencha o formulário</h1>
+    <p>Crie aqui seus clientes</p>
+    {% if isCreate %}
+    <p style="color: green;">Cliente {{name}} cadastrado com sucesso</p>
+    {% endif %}
+    <form method="post">
+        <div>
+            <input type="text" name="name" id="name" placeholder="Nome">
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Informações..."></textarea>
+        </div>
+        <button type="submit">Criar cliente</button>
+    </form>
+    <ul>
+        <li><a href="/criar">Cadastrar cliente</a></li>
+        <li><a href="/clientes">Ver clientes</a></li>
+    </ul>
+</body>
+</html>
